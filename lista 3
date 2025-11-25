@@ -33,4 +33,27 @@ int main () {
     else
         cout<<"Emprestimo não concedido";
 return 0;
+} 
+
+
+#include <iostream> //Questão 3
+using namespace std;
+
+int main () {
+    int dividendo, divisor,resultado,resto;
+    cout<<"Digite o dividendo e o divisor";
+    cin>>dividendo>>divisor;
+
+    if (divisor != 0)
+    {
+        resultado = dividendo / divisor;
+        resto = dividendo % divisor;
+        cout<<resultado<<endl;
+        cout<<resto;
+    }
+    else
+    {
+     cout<<"erro";
+    }
+return 0;
 }   

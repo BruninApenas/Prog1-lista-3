@@ -1,4 +1,4 @@
-#include <iostream> 
+#include <iostream> //questão 1
 using namespace std;
 
 int main () {
@@ -17,3 +17,20 @@ int main () {
     }
 return 0;
 }
+
+
+#include <iostream> //Questão 2
+using namespace std;
+
+int main () {
+    float salário, prestação, limite;
+    cout<<"Digitie o valor do salário e da prestação ";
+    cin>>salário>>prestação;
+    limite = salário*0.2;
+
+    if (salário > limite)
+        cout<<"Emprestimo concedido";
+    else
+        cout<<"Emprestimo não concedido";
+return 0;
+}   

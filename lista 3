@@ -1,0 +1,19 @@
+#include <iostream> 
+using namespace std;
+
+int main () {
+    int n1, n2;
+    cout<<"digite dois valores";
+    cin>>n1>>n2;
+
+    //bloco condicional
+    if (n1>n2) {
+        cout<<"maior é "<<n1<<endl;
+        cout<<"ok";     
+        }
+    else {
+        cout<<"maior é"<<n2<<endl;
+        cout<<"okokok";
+    }
+return 0;
+}

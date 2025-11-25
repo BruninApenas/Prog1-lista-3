@@ -98,7 +98,7 @@ int main () {
         cout<<sqrt(n1)<<"  "<< pow(n2, 0.5)<<endl; //sqrt retorna a raiz quadrada na biblioteca cmath
         break;
     case 3:
-        cout<<pow(n1, 1/3.0)<<"  "<<pow(n2, 1/3.0)<<endl
+        cout<<cbrt(n1)<<"  "<<pow(n2, 1/3.0)<<endl //cbrt retorna a raiz cúbica na biblioteca cmath
         break;
     
     default:

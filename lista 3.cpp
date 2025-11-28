@@ -100,6 +100,45 @@ int main () {
     case 3:
         cout<<cbrt(n1)<<"  "<<pow(n2, 1/3.0)<<endl //cbrt retorna a raiz cúbica na biblioteca cmath
         break;
+
+        
+#include <iostream> //questão 17
+using namespace std;
+
+int main () {
+    int a, b, c; 
+    bool d = true;
+    while (d)
+    {
+        cout<<"Escolha 0 ou 1 ";
+        cin>>a>>b>>c;
+        if ((a != 0 && a !=1) || (b != 0 && b != 1) || (c != 0 && c !=1))
+        {
+            cout<< "Entrada invalida! Digite 0 ou 1\n";
+            continue;
+        }    
+        if ((c >= 0 && c <= 1) && (a == b) && (c != b))
+        {
+            cout<<"C";
+            d = false;
+        }
+        else if ((b >= 0 && b <= 1) && (a == c) && (b != a))
+        {
+            cout<<"B";
+            d = false;
+        }
+        else if ((a >= 0 && a <= 1) && (b == c) && (a != c))
+        {
+            cout<<"A";
+            d = false;
+        }
+        else { 
+        cout<<"*";
+        d = false;
+        }   
+    }
+    
+}   
     
     default:
         break;
